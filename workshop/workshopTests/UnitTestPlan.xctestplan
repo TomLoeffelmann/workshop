@@ -9,7 +9,11 @@
     }
   ],
   "defaultOptions" : {
-
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:workshop.xcodeproj",
+      "identifier" : "F545664A24AA456700D9A273",
+      "name" : "workshop"
+    }
   },
   "testTargets" : [
     {
