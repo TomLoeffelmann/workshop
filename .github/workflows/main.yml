@@ -8,11 +8,7 @@ defaults:
   run:
     working-directory: workshop/
 
-on:
-  push:
-    branches: [ develop, master ]
-  pull_request:
-    branches: [ develop, master  ]
+on: push
 
 jobs:
 
