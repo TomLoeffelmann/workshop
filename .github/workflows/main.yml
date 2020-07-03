@@ -1,9 +1,6 @@
-# This is a basic workflow to help you get started with Actions
 
 name: Testing
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 defaults:
   run:
     working-directory: workshop/
@@ -31,7 +28,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: vendor/bundle
-        key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+        key: ${{ runner.os }}-gem-${{ hashFiles('workshop/Gemfile.lock') }}
         restore-key: ${{ runner.os }}-gem-
     
     - name: install gems
