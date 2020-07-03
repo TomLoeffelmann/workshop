@@ -14,12 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
-    - name: ruby versions
-      run: |
-        ruby --version
-        gem --version
-        bundler --version
     
     - name: cache gems
       uses: actions/cache@v2
