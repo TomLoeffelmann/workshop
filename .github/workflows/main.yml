@@ -15,9 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: debug pwd
-      run: pwd
-      
     - name: ruby versions
       run: |
         ruby --version
