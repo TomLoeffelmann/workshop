@@ -21,9 +21,14 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      
+    - name: debug pwd
+      run: pwd
+      working-directory: workshop/
     
     - name: install gems
       run: bundle install
+      working-directory: workshop/
 
     # Runs a single command using the runners shell
     - name: fastlane-test
