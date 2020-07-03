@@ -34,12 +34,14 @@ jobs:
     - name: cache gems
       uses: actions/cache@v2
       with:
-        path: workshop/
+        path: vendor/bundle
         key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
         restore-key: ${{ runner.os }}-gem-
     
     - name: install gems
-      run: bundle install
+      run: |
+        bundle config path vendor/bundle
+        bundle install --without=documentation
 
     # Runs a single command using the runners shell
     - name: fastlane-test
