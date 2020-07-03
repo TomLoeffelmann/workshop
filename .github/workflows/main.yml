@@ -4,6 +4,10 @@ name: Testing
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
+defaults:
+  run:
+    working-directory: workshop/
+
 on:
   push:
     branches: [ develop, master ]
@@ -24,11 +28,9 @@ jobs:
       
     - name: debug pwd
       run: pwd
-      working-directory: workshop/
     
     - name: install gems
       run: bundle install
-      working-directory: workshop/
 
     # Runs a single command using the runners shell
     - name: fastlane-test
