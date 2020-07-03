@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "7DE2DEA7-430C-46D2-B3AA-A8C11BBD56A6",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:workshop.xcodeproj",
+        "identifier" : "F545666224AA456E00D9A273",
+        "name" : "workshopTests"
+      }
+    }
+  ],
+  "version" : 1
+}

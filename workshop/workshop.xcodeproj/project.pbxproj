@@ -15,6 +15,7 @@
 		F545665D24AA456D00D9A273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F545665B24AA456D00D9A273 /* LaunchScreen.storyboard */; };
 		F545666824AA456E00D9A273 /* workshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545666724AA456E00D9A273 /* workshopTests.swift */; };
 		F545667324AA456E00D9A273 /* workshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545667224AA456E00D9A273 /* workshopUITests.swift */; };
+		F545668124AA4BCB00D9A273 /* AlarmLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545668024AA4BCB00D9A273 /* AlarmLogicController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		F545666E24AA456E00D9A273 /* workshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F545667224AA456E00D9A273 /* workshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workshopUITests.swift; sourceTree = "<group>"; };
 		F545667424AA456E00D9A273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F545668024AA4BCB00D9A273 /* AlarmLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLogicController.swift; sourceTree = "<group>"; };
+		F545668224AF3BB500D9A273 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				F545664E24AA456700D9A273 /* AppDelegate.swift */,
 				F545665024AA456700D9A273 /* SceneDelegate.swift */,
 				F545665224AA456700D9A273 /* FirstViewController.swift */,
+				F545668024AA4BCB00D9A273 /* AlarmLogicController.swift */,
 				F545665424AA456700D9A273 /* SecondViewController.swift */,
 				F545665924AA456D00D9A273 /* Assets.xcassets */,
 				F545665B24AA456D00D9A273 /* LaunchScreen.storyboard */,
@@ -113,6 +117,7 @@
 		F545666624AA456E00D9A273 /* workshopTests */ = {
 			isa = PBXGroup;
 			children = (
+				F545668224AF3BB500D9A273 /* UnitTestPlan.xctestplan */,
 				F545666724AA456E00D9A273 /* workshopTests.swift */,
 				F545666924AA456E00D9A273 /* Info.plist */,
 			);
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F545665524AA456700D9A273 /* SecondViewController.swift in Sources */,
+				F545668124AA4BCB00D9A273 /* AlarmLogicController.swift in Sources */,
 				F545665324AA456700D9A273 /* FirstViewController.swift in Sources */,
 				F545664F24AA456700D9A273 /* AppDelegate.swift in Sources */,
 				F545665124AA456700D9A273 /* SceneDelegate.swift in Sources */,
