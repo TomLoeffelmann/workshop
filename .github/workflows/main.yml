@@ -13,7 +13,8 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: git checkout
+      uses: actions/checkout@v2
     
     - name: cache gems
       uses: actions/cache@v2
@@ -25,7 +26,7 @@ jobs:
     - name: install gems
       run: |
         bundle config path vendor/bundle
-        bundle install --without=documentation
+        bundle install --without=documentation --jobs 4
 
     # Runs a single command using the runners shell
     - name: fastlane-test
